@@ -38,3 +38,13 @@ span {
 li {
   list-style: none;
 }
+
+.cards {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+}
