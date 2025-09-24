@@ -5,6 +5,7 @@ import { PokemonCards } from './PokemonCards';
 
 export const Pokemon = () => {
     const [pokemon, setPokemon] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const API = "https://pokeapi.co/api/v2/pokemon?limit=24";
 
@@ -24,8 +25,10 @@ export const Pokemon = () => {
             const detailedResponses = await Promise.all(detailedPokemonData);
             console.log(detailedResponses);
             setPokemon(detailedResponses);
+            setLoading(false);
         } catch (error) {
             console.log(error);
+            setLoading(false);
         }
     }
 
