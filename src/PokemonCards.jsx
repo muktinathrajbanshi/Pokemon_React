@@ -1,5 +1,9 @@
 import React from 'react';
 
 export const PokemonCards = ({pokemonData}) => {
-  return <li>{pokemonData.name}</li>;
+  return <li className="pokemon-card">
+    <figure>
+        <img src="" alt="" />
+    </figure>
+  </li>;
 };

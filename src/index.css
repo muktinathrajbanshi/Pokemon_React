@@ -41,10 +41,18 @@ li {
 
 .cards {
   margin-top: 1rem;
+  margin: 1rem 2.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
   font-size: 1.3rem;
+}
+
+.pokemon-card {
+  height: 30vh;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  /* border: 1px solid red; */
 }
