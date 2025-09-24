@@ -46,7 +46,7 @@ li {
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   font-size: 1.3rem;
 }
 
@@ -61,7 +61,15 @@ li {
   -o-transition: transform 0.3s ease;
 }
 
+.pokemon-image {
+  width: 30%;
+  height: auto;
+}
+
 figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 18vh;
   background-color: #eff3ff;
