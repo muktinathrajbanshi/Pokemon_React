@@ -9,5 +9,14 @@ export const PokemonCards = ({pokemonData}) => {
         className="pokemon-image"
         />
     </figure>
+    <h1 className="pokemon-name">{pokemonData.name}</h1>
+    <div className="pokemon-info">
+     <div className="pokemon-highlight">
+      <p>
+        {
+          pokemonData.types.map((curType) => curType.type.name).join(", ")}
+      </p>
+      </div>
+    </div>
   </li>;
 };

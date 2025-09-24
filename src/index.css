@@ -66,6 +66,39 @@ li {
   height: 70%;
 }
 
+.pokemon-name {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.pokemon-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-highlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 40%;
+  height: 12%;
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.pokemon-highlight p {
+  font-size: 1.3rem;
+}
+
 figure {
   display: flex;
   justify-content: center;
