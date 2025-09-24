@@ -18,5 +18,16 @@ export const PokemonCards = ({pokemonData}) => {
       </p>
       </div>
     </div>
+    <div className="grid-three-cols">
+      <p className="pokemon-info">
+          <span> Height:</span> {pokemonData.height}
+      </p>
+      <p className="pokemon-info">
+        <span> Weight:</span> {pokemonData.weight}
+      </p>
+      <p className="pokemon-info">
+        <span> Speed:</span> {pokemonData.stats[5].base_stat}
+      </p>
+    </div>
   </li>;
 };

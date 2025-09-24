@@ -75,6 +75,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.pokemon-info span {
+  /* gap: 1rem; */
 }
 
 .pokemon-highlight {
