@@ -6,8 +6,9 @@ import { PokemonCards } from './PokemonCards';
 export const Pokemon = () => {
     const [pokemon, setPokemon] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    const API = "https://pokeapi.co/api/v2/pokemon?limit=24";
+    const API = "https://pokeapi.co/api/v2/pokemons?limit=24";
 
     const fetchPokemon = async () => {
         try {
@@ -29,6 +30,7 @@ export const Pokemon = () => {
         } catch (error) {
             console.log(error);
             setLoading(false);
+            setError(error);
         }
     }
 
@@ -36,9 +38,25 @@ useEffect(() => {
     fetchPokemon();
 }, []);
 
+    if(loading) {
+        return (
+            <div>
+                <h1>Loading....</h1>
+            </div>
+        );
+    }
+
+    if(error) {
+        return (
+            <div>
+                <h1>{error.message}</h1>
+            </div>
+        );
+    }
+
   return (
     <>
-      <section>
+      <section className="container">
         <header>
             <h1>Lets Catch Pokémon</h1>
         </header>
