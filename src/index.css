@@ -71,16 +71,25 @@ li {
   font-size: 2rem;
 }
 
+.grid-three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.pokemon-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .pokemon-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
-.pokemon-info span {
-  /* gap: 1rem; */
 }
 
 .pokemon-highlight {

@@ -1,7 +1,8 @@
 import React from 'react';
 
 export const PokemonCards = ({pokemonData}) => {
-  return <li className="pokemon-card">
+  return (
+  <li className="pokemon-card">
     <figure>
         <img 
         src={pokemonData.sprites.other.dream_world.front_default} 
@@ -29,5 +30,27 @@ export const PokemonCards = ({pokemonData}) => {
         <span> Speed:</span> {pokemonData.stats[5].base_stat}
       </p>
     </div>
-  </li>;
+
+    <div className="grid-three-cols">
+      <div className="pokemon-information">
+          <p>{pokemonData.base_experience}</p> 
+          <span> Experience:</span>
+      </div>
+      <div className="pokemon-information">
+          <p>{pokemonData.stats[1].base_stat}</p> 
+          <span> Attack:</span>
+      </div>
+      <div className="pokemon-information">
+          <p>
+          {pokemonData.abilities
+            .map((abilityInfo) => abilityInfo.ability.name)
+            .slice(0, 1)
+            .join(", ")}
+          </p> 
+          <span> Abilities:</span>
+      </div>
+    </div>          
+
+  </li>
+  );
 };
