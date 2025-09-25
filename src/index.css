@@ -162,17 +162,40 @@ figure:hover {
 
 /* media query starts  */
 
+/* for 1285 px  */
+
+@media (max-width: 1286px) {
+  html {
+    font-size: 60%;
+  }
+
+  .pokemon-search input {
+    width: 33%;
+  }
+
+  .pokemon-information {
+    margin: 0 1rem;
+  }
+}
+
 /* for 1200 px  */
 
 @media (max-width: 1200px) {
   html {
     font-size: 58.5%;
   }
+  .pokemon-search input {
+    width: 33%;
+  }
 }
 
 @media (max-width: 1100px) {
   html {
     font-size: 50%;
+  }
+
+  .pokemon-search input {
+    width: 32%;
   }
 
   p,
@@ -192,11 +215,18 @@ figure:hover {
     .pokemon-highlight {
       width: 45%;
     }
+    .pokemon-search input {
+      width: 30%;
+    }
   }
 
   @media (max-width: 885px) {
     .cards {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pokemon-search input {
+      width: 28%;
     }
   }
 }
