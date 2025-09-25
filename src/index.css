@@ -236,8 +236,54 @@ figure:hover {
     }
 
     .pokemon-search input {
-      width: 33%;
+      width: 34%;
       font-size: 1.9rem;
+    }
+  }
+
+  @media (max-width: 663px) {
+    .pokemon-search input {
+      width: 37%;
+    }
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 550px) {
+    .pokemon-search input {
+      width: 42%;
+    }
+
+    .container h1 {
+      font-size: 3rem;
+    }
+
+    figure {
+      height: 10vh;
+    }
+  }
+
+  @media (max-width: 440px) {
+    html {
+      font-size: 62%;
+    }
+
+    .cards {
+      grid-template-columns: 1fr;
+    }
+
+    .pokemon-search input {
+      width: 68%;
+    }
+
+    figure {
+      height: 13vh;
+    }
+
+    .cards {
+      margin: 1rem 1.3rem;
     }
   }
 }
