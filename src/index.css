@@ -159,3 +159,32 @@ figure:hover {
   -ms-border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
   -o-border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
 }
+
+/* media query starts  */
+
+/* for 1200 px  */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 58.5%;
+  }
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+
+  p,
+  span {
+    font-size: 1.4rem;
+  }
+
+  .pokemon-information {
+    margin: 0 1rem;
+  }
+
+  figure {
+    height: 15vh;
+  }
+}
