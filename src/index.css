@@ -207,6 +207,10 @@ figure:hover {
     margin: 0 1rem;
   }
 
+  figure {
+    height: 15vh;
+  }
+
   @media (max-width: 1036px) {
     .pokemon-highlight {
       width: 45%;
@@ -227,10 +231,6 @@ figure:hover {
   }
 
   @media (max-width: 800px) {
-    .pokemon-card {
-      height: 42vh;
-    }
-
     .pokemon-search input {
       width: 34%;
       font-size: 1.9rem;
@@ -255,6 +255,10 @@ figure:hover {
     .container h1 {
       font-size: 3rem;
     }
+
+    figure {
+      height: 10vh;
+    }
   }
 
   @media (max-width: 440px) {
@@ -268,6 +272,10 @@ figure:hover {
 
     .pokemon-search input {
       width: 68%;
+    }
+
+    figure {
+      height: 13vh;
     }
 
     .cards {
