@@ -60,6 +60,9 @@ useEffect(() => {
         <header>
             <h1>Lets Catch Pokémon</h1>
         </header>
+        <div className="pokemon-search">
+            <input type="text" placeholder="search Pokemon" />
+        </div>
         <div>
             <ul className="cards">
                 {
