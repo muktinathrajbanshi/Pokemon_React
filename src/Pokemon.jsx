@@ -7,6 +7,7 @@ export const Pokemon = () => {
     const [pokemon, setPokemon] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [search, setSearch] = useState(null);
 
     const API = "https://pokeapi.co/api/v2/pokemon?limit=124";
 
@@ -61,7 +62,11 @@ useEffect(() => {
             <h1>Lets Catch Pokémon</h1>
         </header>
         <div className="pokemon-search">
-            <input type="text" placeholder="search Pokemon" />
+            <input 
+            type="text" 
+            placeholder="search Pokemon"
+            value={search}
+             />
         </div>
         <div>
             <ul className="cards">
