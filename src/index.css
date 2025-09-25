@@ -187,4 +187,16 @@ figure:hover {
   figure {
     height: 15vh;
   }
+
+  @media (max-width: 1036px) {
+    .pokemon-highlight {
+      width: 45%;
+    }
+  }
+
+  @media (max-width: 885px) {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
