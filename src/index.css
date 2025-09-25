@@ -229,4 +229,15 @@ figure:hover {
       width: 28%;
     }
   }
+
+  @media (max-width: 800px) {
+    .pokemon-card {
+      height: 42vh;
+    }
+
+    .pokemon-search input {
+      width: 33%;
+      font-size: 1.9rem;
+    }
+  }
 }
